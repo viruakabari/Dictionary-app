@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Enhanced Dictionary</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="history">History</a></li>
+                <li><a href="#" id="random-word">Random Word</a></li>
+                <li><a href="#" id="about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="word-input" placeholder="Search for a word...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Loader Animation -->
+        <div id="loader" class="loader"></div>
+
+        <!-- Result Area -->
+        <div id="result" class="result-box">
+            <h2 id="word-title"></h2>
+            <p id="definition"></p>
+            <button id="audio-btn" style="display: none;">🔊 Hear Pronunciation</button>
+        </div>
+
+        <!-- Word History -->
+        <div id="history-list" class="history-box">
+            <h3>Search History</h3>
+            <ul id="history-words"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Enhanced Dictionary App</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
